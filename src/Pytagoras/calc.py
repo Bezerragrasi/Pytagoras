@@ -1,3 +1,5 @@
+"""Module to calculate the hypotenuse 
+"""
 # Module to calculate the hypotenuse of right-angle triangle
 #will have two functions, one to get the squares of the opp and adj
 #One to calculate the square root of those added together
@@ -8,6 +10,15 @@ import numpy as np
 #Inputs/args: opp and adj (a and b)
 #Outputs/returns: a**2 and b**2
 def squares (opp, adj):
+    """calculate the squares of two values
+
+    Args:
+        opp (float): opposite side of a right angle triangle
+        adj (float): adjacent side of a right angle triangle
+
+    Returns:
+        float, float: squared inputs 
+    """
     opp_sq = opp**2
     adj_sq = adj**2
     return opp_sq, adj_sq
@@ -22,7 +33,7 @@ def hypot (opp_sq, adj_sq):
     hypot_sqrt = np.sqrt(sum_a_a)
     return hypot_sqrt
     
-#function to pull these togeter and calculate the hypotenuse given the sides
+#function to pull these together and calculate the hypotenuse given the sides
 def slope (opp, adj):
     opp_sq, adj_sq = squares (opp, adj)
     hypot_sqrt = hypot (opp_sq, adj_sq)
