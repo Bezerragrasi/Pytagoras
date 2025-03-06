@@ -22,3 +22,8 @@ def hypot (opp_sq, adj_sq):
     hypot_sqrt = np.sqrt(sum_a_a)
     return hypot_sqrt
     
+#function to pull these togeter and calculate the hypotenuse given the sides
+def slope (opp, adj):
+    opp_sq, adj_sq = squares (opp, adj)
+    hypot_sqrt = hypot (opp_sq, adj_sq)
+    return hypot_sqrt
